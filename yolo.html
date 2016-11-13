@@ -19,7 +19,7 @@ myArray [4] = 'red';
 <script type="text/javascript">
 var input = -1;
 while(input < 0 || input > 4) {
-	var input = parseInt(prompt("Enter a value between 0 and 4"));
+	var input = prompt("Enter a value between 0 and 4");
 	if (input >= 0 && input <= 4) {
 		changeText(myArray[input]);
 	} else {
