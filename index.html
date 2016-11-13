@@ -1,31 +1,9 @@
 <html>
 <head>
-<script type="text/javascript">
-function changeText(textColor){
-	var oldHTML = document.getElementById('para').innerHTML;
-	var newHTML = "<span style='color:"+textColor+"'>The color is "+textColor+".</span>";
-	document.getElementById('para').innerHTML = newHTML;
-}
-var myArray = new Array (5);
-myArray [0] = 'green';
-myArray [1] = 'blue';
-myArray [2] = 'yellow';
-myArray [3] = 'orange';
-myArray [4] = 'red';
-</script>
 </head>
 <body>
-	<h1 id='para'>The color is black.</h1>
-<script type="text/javascript">
-var input = -1;
-while(input < 0 || input > 4) {
-	var input = prompt("Enter a value between 0 and 4");
-	if (input >= 0 && input <= 4) {
-		changeText(myArray[input]);
-	} else {
-		changeText('black');
-	}
-}
-</script>
+	<h1 id='para'></h1>
 </body>
+<script type="text/javascript" src="./index.js">
+</script>
 </html>
